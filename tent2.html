@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The ThermaShift Tent Insert</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100">
+    <!-- Header -->
+    <header class="bg-white shadow-md py-4 px-6 md:px-20 flex justify-between items-center fixed top-0 w-full z-50">
+        <!-- Logo Section -->
+        <a href="index.html" class="flex items-center space-x-2">
+            <img src="images/logo.png" alt="MountainAir Logo" class="h-10 w-auto">
+            <h1 class="text-2xl font-bold uppercase text-gray-700">MountainAir</h1>
+        </a>
+        
+        <!-- Navigation Links (Spread out more) -->
+        <nav class="ml-auto flex space-x-8">
+            <ul class="flex space-x-10">
+                <li><a href="index.html" class="text-gray-700 hover:text-black transition">Home</a></li>
+                <li><a href="shop.html" class="text-gray-700 hover:text-black transition">Shop</a></li>
+                <li><a href="thermaShift.html" class="text-gray-700 hover:text-black transition">ThermaShift Technology</a></li>
+                <li><a href="contact.html" class="text-gray-700 hover:text-black transition">Contact</a></li>
+                <li><a href="ourStory.html" class="text-gray-700 hover:text-black transition">Our Story</a></li>
+            </ul>
+        </nav>
+
+        <div class="ml-16">
+            <input type="text" placeholder="Search..." class="p-2 border-b-2 border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500" />
+        </div>
+    </header>
+    
+    <!-- Product Section -->
+    <section class="py-20 px-6 md:px-20 mt-16">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+            <div>
+                <img src="images/shopJacket.jpeg" class="rounded-lg shadow-lg w-full" alt="Tent Interior">
+            </div>
+            <div>
+                <h2 class="text-3xl font-bold">The Flux Jacket</h2>
+                <p class="mt-4 text-lg text-gray-700">Utilizes advanced thermal insulation and water-resistant materials to provide unmatched comfort, warmth, and protection in all weather conditions.</p>
+                <p class="mt-2 text-lg text-gray-700">Lightweight, easy to pack, and ideal for all outdoor adventures.</p>
+                <p class="mt-2 text-xl font-semibold">$99.99</p>
+                <button onclick="addToCart()" class="mt-6 bg-black text-white px-6 py-3 rounded-full text-lg font-semibold hover:bg-gray-800 transition">Add to Cart</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cart Modal -->
+    <div id="cartModal" class="fixed inset-0 bg-black bg-opacity-50 opacity-0 pointer-events-none transition-all">
+        <div class="w-full max-w-md mx-auto mt-20 bg-white p-6 rounded-lg shadow-lg opacity-0 translate-y-4 transition-all">
+            <h3 class="text-2xl font-bold mb-4">Item Added to Cart</h3>
+            <p class="text-lg text-gray-700 mb-6">Your Flux Jacket has been added to the cart.</p>
+            <button onclick="closeModal()" class="bg-blue-600 text-white px-6 py-3 rounded-full text-lg font-semibold hover:bg-blue-700 transition">Close</button>
+        </div>
+    </div>
+
+    <!-- Tabs Section -->
+    <section class="py-16 px-6 md:px-20 bg-gray-50">
+        <div class="max-w-3xl mx-auto">
+            <!-- Tab Navigation with Black Border Underneath -->
+            <div class="flex space-x-8 justify-center mb-8 border-b-2 border-black">
+                <button id="descriptionTab" class="tab-btn text-xl font-semibold text-black py-2 px-6 rounded-t-lg hover:bg-gray-200 transition">Description</button>
+                <button id="featuresTab" class="tab-btn text-xl font-semibold text-black py-2 px-6 rounded-t-lg hover:bg-gray-200 transition">Features</button>
+                <button id="reviewsTab" class="tab-btn text-xl font-semibold text-black py-2 px-6 rounded-t-lg hover:bg-gray-200 transition">Reviews</button>
+            </div>
+
+            <!-- Tab Content -->
+            <div id="description" class="tab-content">
+                <h3 class="text-3xl font-bold text-left mb-6 text-black">Description</h3>
+                <p class="text-lg text-gray-700 mb-4">The Flux Jacket is the ultimate solution for outdoor enthusiasts who crave comfort and adaptability in any weather condition. Featuring cutting-edge technology inspired by advanced thermal insulation systems, this jacket allows you to adjust its warmth to match your activity level and environmental conditions. </p>
+                <p class="text-lg text-gray-700 mb-4">Whether you're trekking through chilly mornings or powering up sunlit trails, the Flux Jacket ensures optimal comfort without compromising on style or mobility.</p>
+            </div>
+            <div id="features" class="tab-content hidden">
+                <h3 class="text-3xl font-bold text-left mb-6 text-black">Key Features</h3>
+                <ul class="list-disc pl-8 text-lg text-gray-700">
+                    <li>Easily regulate the jacket's warmth using integrated controls for dynamic insulation.</li>
+                    <li>Designed for easy packing without adding bulk to your gear.</li>
+                    <li>Constructed with high-quality materials to withstand rugged outdoor conditions.</li>
+                    <li>Stylish enough for urban environments but functional for wilderness adventures.</li>
+                    <li>Made from sustainable resources to minimize environmental impact.</li>
+                </ul>
+            </div>
+            <div id="reviews" class="tab-content hidden">
+                <h3 class="text-3xl font-bold text-left mb-6 text-black">Customer Reviews</h3>
+                <div class="mb-6 border-b pb-6">
+                    <p class="text-lg text-gray-700 mb-2">"I took this jacket on a week-long hiking trip in the Rockies, and it was a game-changer! The ability to adjust the warmth on the go kept me comfortable all day long."</p>
+                    <p class="font-semibold text-gray-900">James L.</p>
+                </div>
+                <div class="mb-6 border-b pb-6">
+                    <p class="text-lg text-gray-700 mb-2">"Great jacket for unpredictable weather. It's lightweight yet surprisingly warm when needed. My only wish is that it came in more colors."</p>
+                    <p class="font-semibold text-gray-900">Jamie S.</p>
+                </div>
+                <div class="mb-6 border-b pb-6">
+                    <p class="text-lg text-gray-700 mb-2">"It's a good jacket overall but took some time to get used to adjusting the thermal settings. Once you get the hang of it, it's really effective." </p>
+                    <p class="font-semibold text-gray-900">Scott M.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Related Products Section -->
+    <section class="py-16 px-6 md:px-20 bg-gray-1000">
+        <div class="max-w-3xl mx-auto text-center">
+            <h3 class="text-3xl font-bold mb-6">Other Products You Might Like</h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+                <!-- ThermaShift Tent Insert -->
+                <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+                    <div class="w-full h-48 overflow-hidden">
+                        <a href="tent1.html">
+                            <img src="images/shopImage2.jpeg"
+                                alt="Product 2"
+                                class="w-full h-full object-cover transform hover:scale-150 origin-bottom transition-transform duration-300 cursor-pointer"
+                                style="object-position: top right;">
+                        </a>
+                    </div>
+                    <div class="p-4">
+                        <h3 class="text-xl font-semibold mb-2">ThermaShift Tent Companion</h3>
+                        <p class="text-gray-600 mb-4">A thermally-adjustable tent insert for maximum comfort.</p>
+                        <p class="text-xl font-bold text-blue-600">$129.99</p>
+                        <button onclick="window.location.href='tent2.html';"
+                                class="mt-4 w-full bg-blue-600 text-white py-2 rounded hover:bg-blue-700 transition">Buy Now</button>
+                    </div>
+                </div>
+
+                <!-- Product 2 - Future products -->
+                <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+                    <div class="w-full h-48 overflow-hidden">
+                        <a href="thermaShift.html">
+                            <img src="images/shopImage3.jpeg"
+                                alt="Future Products"
+                                class="w-full h-full object-cover transform hover:scale-150 origin-top transition-transform duration-300 cursor-pointer">
+                        </a>
+                    </div>
+                    <div class="p-4">
+                        <h3 class="text-xl font-semibold mb-2">Future Products</h3>
+                        <p class="text-gray-600 mb-4">Tents, jackets, and more.</p>
+                        <button onclick="window.location.href='thermaShift.html';"
+                                class="mt-4 w-full bg-blue-600 text-white py-2 rounded hover:bg-blue-700 transition">Learn More</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white text-center py-6 mt-10">
+        <p class="text-sm">&copy; 2025 MountainAir. All rights reserved.</p>
+        <nav class="mt-2">
+            <ul class="flex justify-center space-x-6">
+                <li><a href="privacyPolicy.html" class="hover:underline">Privacy Policy</a></li>
+                <li><a href="privacyPolicy.html" class="hover:underline">Terms of Service</a></li>
+                <li><a href="contact.html" class="hover:underline">Contact</a></li>
+            </ul>
+        </nav>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        // Function to show the modal with smooth fade-in and slide-in animation
+        function addToCart() {
+            const modal = document.getElementById('cartModal');
+            const modalContent = modal.querySelector('div');
+
+            // Fade in the modal and slide up the content
+            modal.classList.remove('opacity-0', 'pointer-events-none');
+            modal.classList.add('opacity-100', 'pointer-events-auto');
+            modalContent.classList.remove('opacity-0', 'translate-y-4');
+            modalContent.classList.add('opacity-100', 'translate-y-0');
+        }
+
+        // Function to close the modal with fade-out and slide-down animation
+        function closeModal() {
+            const modal = document.getElementById('cartModal');
+            const modalContent = modal.querySelector('div');
+
+            // Fade out the modal and slide down the content
+            modal.classList.remove('opacity-100', 'pointer-events-auto');
+            modal.classList.add('opacity-0', 'pointer-events-none');
+            modalContent.classList.remove('opacity-100', 'translate-y-0');
+            modalContent.classList.add('opacity-0', 'translate-y-4');
+        }
+
+        // Tab functionality
+        document.getElementById('descriptionTab').addEventListener('click', function() {
+            switchTab('description');
+        });
+        document.getElementById('featuresTab').addEventListener('click', function() {
+            switchTab('features');
+        });
+        document.getElementById('reviewsTab').addEventListener('click', function() {
+            switchTab('reviews');
+        });
+
+        // Switch content on tab click
+        function switchTab(tabName) {
+            // Hide all tab contents
+            const tabContents = document.querySelectorAll('.tab-content');
+            tabContents.forEach(function(content) {
+                content.classList.add('hidden');
+            });
+
+            // Show the selected tab content
+            const activeTab = document.getElementById(tabName);
+            activeTab.classList.remove('hidden');
+        }
+
+        // Initialize to show the description tab by default
+        switchTab('description');
+    </script>
+</body>
+</html>
