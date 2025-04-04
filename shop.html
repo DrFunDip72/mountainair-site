@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100">
+    <!-- Header -->
+    <header class="bg-white shadow-md py-4 px-6 md:px-20 flex justify-between items-center fixed top-0 w-full z-50">
+        <!-- Logo Section -->
+        <a href="index.html" class="flex items-center space-x-2">
+            <!-- Logo Image -->
+            <img src="images/logo.png" alt="MountainAir Logo" class="h-10 w-auto"> <!-- Adjust the logo size as needed -->
+            <!-- Brand Name -->
+            <h1 class="text-2xl font-bold uppercase text-gray-700">MountainAir</h1>
+        </a>
+        
+        <!-- Navigation Links (Spread out more) -->
+        <nav class="ml-auto flex space-x-8"> <!-- Increased space between links -->
+            <ul class="flex space-x-10">
+                <li><a href="index.html" class="text-gray-700 hover:text-black transition">Home</a></li>
+                <li><a href="shop.html" class="text-gray-700 hover:text-black transition">Shop</a></li>
+                <li><a href="thermaShift.html" class="text-gray-700 hover:text-black transition">ThermaShift Technology</a></li>
+                <li><a href="contact.html" class="text-gray-700 hover:text-black transition">Contact</a></li>
+                <li><a href="ourStory.html" class="text-gray-700 hover:text-black transition">Our Story</a></li>
+            </ul>
+        </nav>
+
+        <!-- Search Bar Section with bottom underline -->
+        <div class="ml-16">
+            <input type="text" placeholder="Search..." class="p-2 border-b-2 border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500" />
+        </div>
+    </header>
+
+    <!-- Banner Section -->
+    <section class="relative w-full h-80 bg-cover bg-center" style="background-image: url('images/shopImage1.jpeg');">
+        <div class="absolute inset-0 bg-black bg-opacity-50 flex flex-col justify-start items-center text-center text-white px-6 pt-40">
+            <h1 class="text-3xl sm:text-4xl md:text-5xl font-bold uppercase">Discover Comfort</h1>
+        </div>
+    </section>
+
+    <!-- Shop Section -->
+    <section class="py-20 px-6 md:px-20 -mt-8 text-center">
+        <!-- Products Grid -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-6">
+            <!-- Product 1 -->
+            <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+                <div class="w-full h-48 overflow-hidden">
+                    <a href="tent1.html">
+                        <img src="images/shopImage2.jpeg"
+                            alt="ThermaShift Tent Insert"
+                            class="w-full h-full object-cover transform hover:scale-150 origin-bottom transition-transform duration-300 cursor-pointer">
+                    </a>
+                </div>
+                <div class="p-4">
+                    <h3 class="text-xl font-semibold mb-2">ThermaShift Tent Companion</h3>
+                    <p class="text-gray-600 mb-4">A thermally-adjustable tent insert for maximum comfort.</p>
+                    <p class="text-xl font-bold text-blue-600">$129.99</p>
+                    <button onclick="window.location.href='tent1.html';"
+                            class="mt-4 w-full bg-blue-600 text-white py-2 rounded hover:bg-blue-700 transition">Buy Now</button>
+                </div>
+            </div>
+
+
+            <!-- Product 2 -->
+            <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+                <div class="w-full h-48 overflow-hidden">
+                    <a href="tent2.html">
+                        <img src="images/shopJacket.jpeg"
+                            alt="Product 2"
+                            class="w-full h-full object-cover transform hover:scale-150 origin-top-right transition-transform duration-300 cursor-pointer"
+                            style="object-position: top right;">
+                    </a>
+                </div>
+                <div class="p-4">
+                    <h3 class="text-xl font-semibold mb-2">The Flux Jacket</h3>
+                    <p class="text-gray-600 mb-4">Wearable thermally-adjustability.</p>
+                    <p class="text-xl font-bold text-blue-600">$99.99</p>
+                    <button onclick="window.location.href='tent2.html';"
+                            class="mt-4 w-full bg-blue-600 text-white py-2 rounded hover:bg-blue-700 transition">Buy Now</button>
+                </div>
+            </div>
+
+            <!-- Product 3 -->
+            <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+                <div class="w-full h-48 overflow-hidden">
+                    <a href="thermaShift.html">
+                        <img src="images/shopImage3.jpeg"
+                            alt="Future Products"
+                            class="w-full h-full object-cover transform hover:scale-150 origin-top transition-transform duration-300 cursor-pointer">
+                    </a>
+                </div>
+                <div class="p-4">
+                    <h3 class="text-xl font-semibold mb-2">Future Products</h3>
+                    <p class="text-gray-600 mb-4">Tents, jackets, and more.</p>
+                    <button onclick="window.location.href='thermaShift.html';"
+                            class="mt-4 w-full bg-blue-600 text-white py-2 rounded hover:bg-blue-700 transition">Learn More</button>
+                </div>
+            </div>
+
+    </section>
+
+    <!-- Benefits Section -->
+    <section class="py-10 px-6 md:px-20 bg-gray-200 text-center">
+        <div class="flex justify-between items-center space-x-6">
+            <!-- Text Box 1: Free US Shipping -->
+            <div class="flex-1">
+                <h3 class="text-xl font-semibold mb-2">Free US Shipping</h3>
+                <p class="text-gray-600">On orders over $300</p>
+            </div>
+
+            <!-- Text Box 2: Optimal Balance of Weight, Durability, and Water Protection -->
+            <div class="flex-1">
+                <h3 class="text-xl font-semibold mb-2">Optimal Balance of</h3>
+                <p class="text-gray-600">Comfort and Affordability</p>
+            </div>
+
+            <!-- Text Box 3: Built with Dyneema -->
+            <div class="flex-1">
+                <h3 class="text-xl font-semibold mb-2">ThermaShift Technology</h3>
+                <p class="text-gray-600">A new era of comfort</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white text-center py-6 mt-0">
+        <p class="text-sm">&copy; 2025 MountainAir. All rights reserved.</p>
+        <nav class="mt-2">
+            <ul class="flex justify-center space-x-6">
+                <li><a href="privacyPolicy.html" class="hover:underline">Privacy Policy</a></li>
+                <li><a href="privacyPolicy.html" class="hover:underline">Terms of Service</a></li>
+                <li><a href="contact.html" class="hover:underline">Contact</a></li>
+            </ul>
+        </nav>
+    </footer>
+
+
+</body>
+</html>
