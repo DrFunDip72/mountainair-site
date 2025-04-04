@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Story</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100">
+    <!-- Header -->
+    <header class="bg-white shadow-md py-4 px-6 md:px-20 flex justify-between items-center fixed top-0 w-full z-50">
+        <!-- Logo Section -->
+        <a href="index.html" class="flex items-center space-x-2">
+            <!-- Logo Image -->
+            <img src="images/logo.png" alt="MountainAir Logo" class="h-10 w-auto"> <!-- Adjust the logo size as needed -->
+            <!-- Brand Name -->
+            <h1 class="text-2xl font-bold uppercase text-gray-700">MountainAir</h1>
+        </a>
+        
+        <!-- Navigation Links (Spread out more) -->
+        <nav class="ml-auto flex space-x-8"> <!-- Increased space between links -->
+            <ul class="flex space-x-10">
+                <li><a href="index.html" class="text-gray-700 hover:text-black transition">Home</a></li>
+                <li><a href="shop.html" class="text-gray-700 hover:text-black transition">Shop</a></li>
+                <li><a href="thermaShift.html" class="text-gray-700 hover:text-black transition">ThermaShift Technology</a></li>
+                <li><a href="contact.html" class="text-gray-700 hover:text-black transition">Contact</a></li>
+                <li><a href="ourStory.html" class="text-gray-700 hover:text-black transition">Our Story</a></li>
+            </ul>
+        </nav>
+
+        <!-- Search Bar Section with bottom underline -->
+        <div class="ml-16">
+            <input type="text" placeholder="Search..." class="p-2 border-b-2 border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500" />
+        </div>
+    </header>
+
+    <!-- Banner Section -->
+    <section class="relative w-full h-80 bg-cover bg-top" style="background-image: url('images/mountain.jpeg');">
+        <div class="absolute inset-0 bg-black bg-opacity-50 flex flex-col justify-start items-center text-center text-white px-6 pt-40">
+            <h1 class="text-3xl sm:text-4xl md:text-5xl font-bold uppercase">Our Story</h1>
+            <p class="text-lg py-5 max-w-3xl mx-auto mb-12">A Journey that Became a Brand.</p>
+
+        </div>
+    </section>
+    
+    <!-- Our Story Section -->
+
+    <section class="py-14 px-6 md:px-20 mt--2 text-center">
+        <div class = "max-w-3xl mx-auto text-left mb-6">
+            <h2 class="text-4xl font-bold">MountainAir Origins</h2>
+        </div>
+        <p class="text-lg text-gray-700 max-w-3xl mx-auto text-left">
+            MountainAir was born from a shared love of adventure, exploration, and the untamed beauty of the outdoors. What started as late-night conversations around a campfire turned into a mission—to create gear that not only performs but inspires. From our first prototype to every product we ship today, we’ve stayed true to one vision: helping people feel more at home in the wild.
+        </p>
+        <br>
+        <p class="text-lg text-gray-700 max-w-3xl mx-auto text-left">
+            Meet the founders who brought this dream to life.
+        </p>                  
+        <!-- Founders Section -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-10 mt-10">
+
+            <!-- Founder 1 -->
+            <a href="https://www.linkedin.com/in/maxwell-justin/" target="_blank" class="relative group overflow-hidden rounded-lg shadow-lg block">
+                <img src="images/justin.jpg"
+                    class="w-full h-96 object-cover object-top object-center transform group-hover:scale-105 transition-transform duration-300 cursor-pointer"
+                    alt="Justin Maxwell">
+                <div class="absolute bottom-0 left-0 w-full bg-black bg-opacity-60 text-white px-4 py-3 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                    <h3 class="text-lg font-semibold">Justin Maxwell</h3>
+                    <p class="text-sm text-gray-200">Co-Founder & CEO</p>
+                </div>
+            </a>
+
+            <!-- Founder 2 -->
+            <a href="https://www.linkedin.com/in/stetson-moss/" target="_blank" class="relative group overflow-hidden rounded-lg shadow-lg block">
+                <img src="images/stetson.jpg"
+                    class="w-full h-96 object-cover object-top object-center transform group-hover:scale-105 transition-transform duration-300 cursor-pointer"
+                    alt="Stetson Moss">
+                <div class="absolute bottom-0 left-0 w-full bg-black bg-opacity-60 text-white px-4 py-3 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                    <h3 class="text-lg font-semibold">Stetson Moss</h3>
+                    <p class="text-sm text-gray-200">Co-Founder & CMO</p>
+                </div>
+            </a>
+
+            <!-- Founder 3 -->
+            <a href="https://www.linkedin.com/in/dallon-miskin/" target="_blank" class="relative group overflow-hidden rounded-lg shadow-lg block">
+                <img src="images/dallon.jpg"
+                    class="w-full h-96 object-cover object-[center_20%] transform group-hover:scale-105 transition-transform duration-300 cursor-pointer"
+                    alt="Dallon Miskin">
+                <div class="absolute bottom-0 left-0 w-full bg-black bg-opacity-60 text-white px-4 py-3 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                    <h3 class="text-lg font-semibold">Dallon Miskin</h3>
+                    <p class="text-sm text-gray-200">Co-Founder & CEngO</p>
+                </div>
+            </a>
+
+        </div>
+
+
+        <div class="max-w-3xl mx-auto mt-10 bg-gradient-to-br from-white to-gray-100 p-8 rounded-2xl shadow-xl border border-gray-200 hover:shadow-2xl transition-shadow duration-300">
+            <p class="text-xl font-medium text-gray-700 leading-relaxed">
+                With grit, creativity, and countless hours of testing in the elements, we’ve designed solutions that elevate outdoor living. Our goal is simple: to empower adventurers with gear that adapts to their journey—wherever it takes them.
+            </p>
+        </div> 
+    </section>
+
+    <!-- Waitlist Section -->
+    <section class="py-16 px-6 md:px-20 bg-gray-50">
+        <div class="max-w-3xl mx-auto text-center">
+            <h3 class="text-3xl font-bold mb-6">Join Us to Learn More</h3>
+            <p class="text-lg text-gray-700 mb-6">Be the first to know about our new products and innovations. Enter your email below to get updates on future releases.</p>
+            
+            <!-- Waitlist Form -->
+            <form id="waitlist-form" class="space-y-4">
+                <input type="email" id="waitlist-email" class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="Enter your email" required>
+                <button type="submit" class="w-full bg-blue-600 text-white py-3 rounded-lg hover:bg-blue-700 transition">Join Waitlist</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Confirmation Pop-up (Hidden by default) -->
+    <div id="confirmation-popup" class="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center hidden z-50">
+        <div class="bg-white p-6 rounded-lg shadow-lg max-w-xs mx-auto text-center">
+            <h4 class="text-xl font-semibold text-green-600">Success!</h4>
+            <p class="mt-4 text-lg">You've successfully joined the waitlist! We’ll keep you updated on new releases.</p>
+            <button id="close-popup" class="mt-6 bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition">Close</button>
+        </div>
+    </div>
+
+    <script>
+        // Get the form and confirmation elements
+        const form = document.getElementById('waitlist-form');
+        const popup = document.getElementById('confirmation-popup');
+        const closePopupButton = document.getElementById('close-popup');
+
+        // Form submission event
+        form.addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent form from submitting the traditional way
+
+            // Display confirmation popup
+            popup.classList.remove('hidden');
+
+            // Optionally, you can log the email for testing purposes
+            const email = document.getElementById('waitlist-email').value;
+            console.log('Email added to waitlist:', email);
+
+            // Clear the form after submission
+            form.reset();
+        });
+
+        // Close the confirmation popup
+        closePopupButton.addEventListener('click', function() {
+            popup.classList.add('hidden');
+        });
+    </script>
+
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white text-center py-6 mt-10">
+        <p class="text-sm">&copy; 2025 MountainAir. All rights reserved.</p>
+        <nav class="mt-2">
+            <ul class="flex justify-center space-x-6">
+                <li><a href="privacyPolicy.html" class="hover:underline">Privacy Policy</a></li>
+                <li><a href="privacyPolicy.html" class="hover:underline">Terms of Service</a></li>
+                <li><a href="contact.html" class="hover:underline">Contact</a></li>
+            </ul>
+        </nav>
+    </footer>
+</body>
+</html>
